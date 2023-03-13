@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Posts = ({ otherPosts }) => {
   return (
-    <div>
+    <>
       {otherPosts?.map((post, index) => (
         <div key={index} className="p-4 md:w-1/2">
           <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -37,7 +37,7 @@ const Posts = ({ otherPosts }) => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
