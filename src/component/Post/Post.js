@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import article from '../data/post-content';
-import PostList from '../PostList/PostList';
 import Posts from '../Posts/Posts';
 
 const Post = () => {
@@ -33,12 +32,10 @@ const Post = () => {
         </p>
       ))}
       <h1 className="sm:text-2x text-xl font-bold mt-4 mb-4 text-gray-900">
-        {' '}
         Related Post
       </h1>
       <div className="flex flex-wrap -m-4">
-        <Posts />
-        {/* <PostList /> */}
+        <Posts otherPosts={relatedPosts}></Posts>
       </div>
     </div>
   );
