@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+  .link {
+    position: relative;
+  }
+
+  .link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    background: rgb(247, 6, 122);
+  }
+
+  .link:hover::after {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  /* .active::after {
+        width: 100%;
+    } */
+}

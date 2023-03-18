@@ -1,16 +1,33 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
+// // module.exports = {
+// //   content: [],
+// //   theme: {
+// //     extend: {},
+// //   },
+// //   plugins: [],
+// // }
+
 // module.exports = {
-//   content: [],
+//   content: ["./src/**/*.{html,js}"],
 //   theme: {
 //     extend: {},
 //   },
 //   plugins: [],
 // }
 
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+
+    plugins: [],
   },
-  plugins: [],
-}
+};
